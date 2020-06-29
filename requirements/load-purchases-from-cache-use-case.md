@@ -7,6 +7,10 @@
 4. Sistema cria uma lista de compras a partir dos dados do Cache
 5. Sistema retorna a lista de compras
 
+> ## Exceção - Erro ao carregar dados do Cache
+1. Sistema limpa o Cache
+2. Sistema retorna uma lista vazia
+
 > ## Exceção - Cache expirado
 1. Sistema limpa o Cache
 2. Sistema retorna uma lista vazia
