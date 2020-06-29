@@ -42,6 +42,13 @@ export class CacheStoreSpy implements CacheStore {
       throw new Error()
     })
   }
+
+  simulateFetchError (): void {
+    jest.spyOn(CacheStoreSpy.prototype, 'fetch').mockImplementationOnce(() => {
+      this.actions.push(CacheStoreSpy.Action.fetch)
+      throw new Error()
+    })
+  }
 }
 
 export namespace CacheStoreSpy {
